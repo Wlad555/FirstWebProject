@@ -1,0 +1,140 @@
+*{
+    border: red solid 1px;
+}
+body{
+    background-color: white;
+    font-family: Helvetica Neue, Helvetica, Arial;
+    margin: 0;
+    padding: 0;
+   
+}
+header{ 
+    background-color: gray;
+    background-image: url(bilder/Home/backround.jpg);
+    background-size: 100%;
+    background-position: center;
+    padding: 20px;
+    height: 250px;
+    text-align: center;
+    border-bottom: 3px solid red ;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+header .mobile{
+    display: none;
+}
+header .logo a{
+    background-image: url("bilder/Home/logo.png");
+    width: 300px;
+    height: 100px;
+    text-indent: -999999999px;
+    position: relative;
+    top:-40px;
+    display: inline-block;
+    background-size: 300px;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 715px) {
+    header{
+        height: 150px;
+    }
+    header .mobile {
+        display: inline-block;
+    }
+    header .desktop{
+        display: none;
+    }
+}
+.features{
+    background: white;
+    color: gray;
+    padding: 40px 40px 40px 50px;;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.features div{
+    margin: auto;
+    width: 100px;
+    
+}
+.features img{
+    border: 1px solid white;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: gray 5px 5px 20px;
+}
+/*Responsive Rules*/
+@media  screen and (max-width: 715px) {
+   
+}
+ul{
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+  
+}
+li{
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+li:not(.logo):hover{
+    background-color: gray;
+}
+
+.box{
+    
+    width: auto;
+    margin: 40px;
+    border-radius: 40px;
+    background: #f9dcdf;
+    box-shadow: inset 27px 27px 52px #645859,
+                inset -27px -27px 52px #ffffff;
+}
+
+.inbox{
+    padding: 1px 10px 10px 10px;
+    margin: 30px;
+    color: black;
+    font-size: 1.3em;
+    background-size: 100%;
+    
+}
+
+
+/*.foot{
+    background: black;
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-image: url("bilder/Home/backround.jpg");
+    text-align: center;*/
+    
+    
+    /*footer{
+        background: black;
+        color: gray;
+        font-size: 12px;
+        padding: 20px 20px;
+        text-align: center;
+      }*/
+      
+a{    
+    text-decoration: none;
+}
+a:hover{    
+    text-decoration: underline;
+}
+
