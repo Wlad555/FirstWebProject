@@ -1,6 +1,4 @@
-*{
-    border: 1px red solid;
-}
+
 body{
     background-color: white;
     font-family: Helvetica Neue, Helvetica, Arial;
@@ -10,11 +8,11 @@ body{
 }
 header{ 
     background-color: gray;
-    background-image: url(bilder/Home/backround.jpg);
+    background-image: url(/bilder/Home/backround.jpg);
     background-size: 100%;
     background-position: center;
     padding: 20px;
-    height: 250px;
+    height: 100px;
     text-align: center;
     border-bottom: 3px solid red ;
 }
@@ -26,9 +24,11 @@ header a{
 }
 header .mobile{
     display: none;
+    
 }
-header .logo {
-    background-image: url("bilder/Home/logo.png");
+
+header .logo a{
+    background-image: url("/bilder/Home/logo.png");
     width: 300px;
     height: 100px;
     text-indent: -999999999px;
@@ -37,7 +37,9 @@ header .logo {
     display: inline-block;
     background-size: 300px;
     background-repeat: no-repeat;
-
+}
+.logo{
+    height: 50px;
 }
 
 @media screen and (max-width: 715px) {
@@ -50,8 +52,8 @@ header .logo {
     header .desktop{
         display: none;
     }
-    header .logo{
-       top: 5px;
+    header .logo a{
+       top: 10px;
     }
 
 }

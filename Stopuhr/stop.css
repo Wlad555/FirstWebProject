@@ -1,0 +1,32 @@
+html {
+    min-height: fit-content;
+    height: 100%;
+    font-family: Helvetica Neuen, Helvetica, Arial;
+  }
+
+.stopuhr-box{
+    width: 50%;
+    height: 500px;
+    border-radius: 50px;
+    border: 1px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    background-color: rgb(255, 255, 255, 0.5);
+      backdrop-filter: blur(15 px);
+}
+h1{
+    color: white;
+    text-align: center;  
+}
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
