@@ -13,14 +13,14 @@
       <nav>
         <ul>
           <li><a href="/Homepage/index.html">Home</a></li>
-          <li class="mobile"><a href="/Stopuhr/stopuhr.html">Stopuhr</a></li>
+          <li class="mobile"><a href="/Stopuhr/stopuhr.html">Stoppuhr</a></li>
           <li class="mobile">
             <a href="/Timetracker/timetracker.html">Time-Tracker</a>
           </li>
           <li class="logo">
             <a href="/Homepage/index.html">Portfolio Logo</a>
           </li>
-          <li class="desktop"><a href="/Stopuhr/stopuhr.html">Stopuhr</a></li>
+          <li class="desktop"><a href="/Stopuhr/stopuhr.html">Stoppuhr</a></li>
           <li class="desktop">
             <a href="/Timetracker/timetracker.html">Time-Tracker</a>
           </li>
@@ -39,8 +39,18 @@
       </video>
     </div>
     <div class="stopuhr-box">
-      <h1>Stopuhr</h1>
+      <h1>Stoppuhr</h1>
+      <p>Zeit</p>
+      <div id="Zeit">
+        <div id="ZeitWert"></div>
+      </div>
+      <div id="knopf">
+        <button id="Start" onclick="starteZeit()">Start</button>
+        <button id="Stopp" onclick="stoppeZeit()">Stopp</button>
+      </div>
     </div>
+    <p>Speicher</p>
+    <div id="Speicher"></div>
     <footer>
       <nav class="foot">
         <ul>
@@ -51,5 +61,10 @@
         </ul>
       </nav>
     </footer>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="/Stopuhr/stop.js"
+    ></script>
   </body>
 </html>
