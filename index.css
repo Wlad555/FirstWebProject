@@ -1,5 +1,5 @@
 *{
-    border: red solid 1px;
+    border: 1px red solid;
 }
 body{
     background-color: white;
@@ -22,22 +22,24 @@ header a{
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    margin-top: 20px;
+    top: -100px;
 }
 header .mobile{
     display: none;
 }
-header .logo a{
+header .logo {
     background-image: url("bilder/Home/logo.png");
     width: 300px;
     height: 100px;
     text-indent: -999999999px;
     position: relative;
-    top:-40px;
+    top: -30px;
     display: inline-block;
     background-size: 300px;
     background-repeat: no-repeat;
+
 }
+
 @media screen and (max-width: 715px) {
     header{
         height: 150px;
@@ -48,6 +50,10 @@ header .logo a{
     header .desktop{
         display: none;
     }
+    header .logo{
+       top: 5px;
+    }
+
 }
 .features{
     background: white;
@@ -73,9 +79,6 @@ header .logo a{
     box-shadow: gray 5px 5px 20px;
 }
 /*Responsive Rules*/
-@media  screen and (max-width: 715px) {
-   
-}
 ul{
     margin:0;
     padding: 0;
@@ -109,32 +112,19 @@ li:not(.logo):hover{
     background-size: 100%;
     
 }
-
-
-/*.foot{
-    background: black;
-    color: white;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-image: url("bilder/Home/backround.jpg");
-    text-align: center;*/
-    
-    
-    /*footer{
-        background: black;
-        color: gray;
-        font-size: 12px;
-        padding: 20px 20px;
-        text-align: center;
-      }*/
-      
 a{    
     text-decoration: none;
 }
 a:hover{    
     text-decoration: underline;
 }
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+     width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
 
+}
