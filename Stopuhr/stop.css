@@ -96,13 +96,17 @@ p{
   border-radius: 10px;
 }
 #Speicher{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
   text-align: center;
-  color: white;
+  color: black;
   border-radius: 50px;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(244, 238, 238, 0.403);
+  background-color: rgba(244, 238, 238, 1);
   width: 40%;
   height: 200px;
 }
